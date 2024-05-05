@@ -9,7 +9,6 @@ import Cytechnologies.Principal.Principal;
 @SpringBootApplication
 public class Chalenge2Application implements CommandLineRunner{
 	private static final String URL_BASE_API = "http://gutendex.com/books/";
-	private Principal principal = new Principal(URL_BASE_API);
 	
 	public static void main(String[] args) {
 		SpringApplication.run(Chalenge2Application.class, args);
@@ -17,7 +16,7 @@ public class Chalenge2Application implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		principal.muestraMenu();
+		Principal principal = new Principal(URL_BASE_API);
 	}
 
 }
