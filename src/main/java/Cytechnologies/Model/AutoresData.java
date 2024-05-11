@@ -9,5 +9,9 @@ public record AutoresData(
     @JsonAlias("birth_year") String anioNacimiento,
     @JsonAlias("death_year") String anioMuerte
 ) {
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + ",";
+    }
     
 }

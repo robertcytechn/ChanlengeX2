@@ -27,6 +27,15 @@ public class FuncionesAplication{
             return 0;
         }
     }
+    public String leerCadena() {
+        //leemos una cadena
+        try {
+            return leerConsola.readLine();
+        } catch (Exception e) {
+            System.out.println("Parece ser que no introdujo una cadena, por favor vuelva a intentarlo");
+            return "";
+        }
+    }
 
     //constructor
     public FuncionesAplication() {
